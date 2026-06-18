@@ -1,20 +1,32 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font: "Inter-Variable", sans-serif;
-    --accent-font: "PressStart2P", sans-serif;
-    --text-font-weight: 410;
-    --title-font-weight: 715;
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P", sans-serif;
+  --text-font-weight: 410;
+  --title-font-weight: 715;
 
-    --stroke-color: rgba(255, 255, 255, 1);
+  --stroke-color: rgba(255, 255, 255, 1);
 
-    /*сердце*/
-    --heart-black: rgba(0, 0, 0, 1); 
-    --heart-red: rgba(255, 0, 0, 1);
+  /*сердце*/
+  --heart-black: rgba(0, 0, 0, 1);
+  --heart-red: rgba(255, 0, 0, 1);
 
+  --background-gradient:
+    repeating-linear-gradient(
+      to right,
+      rgba(231, 231, 231, 1) 0 2px,
+      rgba(231, 231, 231, 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(231, 231, 231, 1) 0 2px,
+      rgba(231, 231, 231, 0) 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(231, 231, 231, 1) 0.01%,
+      rgba(26, 26, 26, 1)
+    );
 
-    --background-gradient: repeating-linear-gradient(to right, rgba(231, 231, 231, 1) 0 2px, rgba(231, 231, 231, 0) 2px 4px),
-                      repeating-linear-gradient(to bottom, rgba(231, 231, 231, 1) 0 2px, rgba(231, 231, 231, 0) 2px 4px),
-                      linear-gradient(to bottom, rgba(231, 231, 231, 1) 0.01%, rgba(26, 26, 26, 1));
-    
-    --block-inline-size: clamp(375px, calc(30.5vw + 261px), 700px);
+  --block-inline-size: clamp(375px, calc(30.5vw + 261px), 700px);
 }
